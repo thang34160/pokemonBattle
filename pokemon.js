@@ -60,9 +60,12 @@ class Pokemon {
         }
 
         attack (otherPokemeon) {
-            if (otherPokemeon.type === "water") {
-                otherPokemeon.#level += 5;
+            super.attack (otherPokemeon) {
+                if (otherPokemeon.type === "water") {
+                    otherPokemeon.#level += 5;
+                }  
             }
+            
         }
     }
 }
